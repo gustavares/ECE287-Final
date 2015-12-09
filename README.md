@@ -51,5 +51,4 @@ a)	If clk is a 50MHz clock, what is the operating frequency of the circuit and h
 
 
 b)	What is the size of your circuit (do not include the wrapper) and how much of the FPGA is that on the DE2-115 board?  
-ECE 287 - Take home exam Rubric
 
