@@ -1,0 +1,891 @@
+Analysis & Synthesis report for WRAPPER_EXAMIII
+Fri Nov 14 11:03:12 2014
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |WRAPPER_EXAMIII|S
+  9. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw16|b_state
+ 10. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw15|b_state
+ 11. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw14|b_state
+ 12. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw13|b_state
+ 13. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw12|b_state
+ 14. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw11|b_state
+ 15. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw10|b_state
+ 16. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw9|b_state
+ 17. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw8|b_state
+ 18. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw7|b_state
+ 19. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw6|b_state
+ 20. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw5|b_state
+ 21. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw4|b_state
+ 22. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw3|b_state
+ 23. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw2|b_state
+ 24. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw1|b_state
+ 25. State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw0|b_state
+ 26. Registers Removed During Synthesis
+ 27. General Register Statistics
+ 28. Parameter Settings for User Entity Instance: Top-level Entity: |WRAPPER_EXAMIII
+ 29. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw0
+ 30. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw1
+ 31. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw2
+ 32. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw3
+ 33. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw4
+ 34. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw5
+ 35. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw6
+ 36. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw7
+ 37. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw8
+ 38. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw9
+ 39. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw10
+ 40. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw11
+ 41. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw12
+ 42. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw13
+ 43. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw14
+ 44. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw15
+ 45. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw16
+ 46. Post-Synthesis Netlist Statistics for Top Partition
+ 47. Elapsed Time Per Partition
+ 48. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Nov 14 11:03:11 2014      ;
+; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
+; Revision Name                      ; WRAPPER_EXAMIII                            ;
+; Top-level Entity Name              ; WRAPPER_EXAMIII                            ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 667                                        ;
+;     Total combinational functions  ; 603                                        ;
+;     Dedicated logic registers      ; 532                                        ;
+; Total registers                    ; 532                                        ;
+; Total pins                         ; 46                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; WRAPPER_EXAMIII    ; WRAPPER_EXAMIII    ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
+; wrapper_examiii.v                ; yes             ; Auto-Found Verilog HDL File  ; H:/TEACHING/ECE_287/FALL_2014/EXAMS/EXAM3_GENERATOR/WRAPPER_EXAMIII/wrapper_examiii.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 667            ;
+;                                             ;                ;
+; Total combinational functions               ; 603            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 150            ;
+;     -- 3 input functions                    ; 56             ;
+;     -- <=2 input functions                  ; 397            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 250            ;
+;     -- arithmetic mode                      ; 353            ;
+;                                             ;                ;
+; Total registers                             ; 532            ;
+;     -- Dedicated logic registers            ; 532            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 46             ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 532            ;
+; Total fan-out                               ; 3644           ;
+; Average fan-out                             ; 2.97           ;
++---------------------------------------------+----------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                 ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                 ; Library Name ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
+; |WRAPPER_EXAMIII                   ; 603 (26)          ; 532 (74)     ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |WRAPPER_EXAMIII                                    ; work         ;
+;    |debounce_DE2_SW:deb|           ; 544 (0)           ; 425 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb                ; work         ;
+;       |debouncer:sw0|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw0  ; work         ;
+;       |debouncer:sw10|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw10 ; work         ;
+;       |debouncer:sw11|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw11 ; work         ;
+;       |debouncer:sw12|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw12 ; work         ;
+;       |debouncer:sw13|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw13 ; work         ;
+;       |debouncer:sw14|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw14 ; work         ;
+;       |debouncer:sw15|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw15 ; work         ;
+;       |debouncer:sw16|             ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw16 ; work         ;
+;       |debouncer:sw1|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw1  ; work         ;
+;       |debouncer:sw2|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw2  ; work         ;
+;       |debouncer:sw3|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw3  ; work         ;
+;       |debouncer:sw4|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw4  ; work         ;
+;       |debouncer:sw5|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw5  ; work         ;
+;       |debouncer:sw6|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw6  ; work         ;
+;       |debouncer:sw7|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw7  ; work         ;
+;       |debouncer:sw8|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw8  ; work         ;
+;       |debouncer:sw9|              ; 32 (32)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw9  ; work         ;
+;    |your_exam_module:instantiated| ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAMIII|your_exam_module:instantiated      ; work         ;
++------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++----------------------------------------------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|S                                                                                   ;
++-----------+----------+-----------+---------+----------+---------+----------+---------+----------+---------+----------+
+; Name      ; S.DANGER ; S.EXECUTE ; S.GET_D ; S.WAIT_D ; S.GET_C ; S.WAIT_C ; S.GET_B ; S.WAIT_B ; S.GET_A ; S.WAIT_A ;
++-----------+----------+-----------+---------+----------+---------+----------+---------+----------+---------+----------+
+; S.WAIT_A  ; 0        ; 0         ; 0       ; 0        ; 0       ; 0        ; 0       ; 0        ; 0       ; 0        ;
+; S.GET_A   ; 0        ; 0         ; 0       ; 0        ; 0       ; 0        ; 0       ; 0        ; 1       ; 1        ;
+; S.WAIT_B  ; 0        ; 0         ; 0       ; 0        ; 0       ; 0        ; 0       ; 1        ; 0       ; 1        ;
+; S.GET_B   ; 0        ; 0         ; 0       ; 0        ; 0       ; 0        ; 1       ; 0        ; 0       ; 1        ;
+; S.WAIT_C  ; 0        ; 0         ; 0       ; 0        ; 0       ; 1        ; 0       ; 0        ; 0       ; 1        ;
+; S.GET_C   ; 0        ; 0         ; 0       ; 0        ; 1       ; 0        ; 0       ; 0        ; 0       ; 1        ;
+; S.WAIT_D  ; 0        ; 0         ; 0       ; 1        ; 0       ; 0        ; 0       ; 0        ; 0       ; 1        ;
+; S.GET_D   ; 0        ; 0         ; 1       ; 0        ; 0       ; 0        ; 0       ; 0        ; 0       ; 1        ;
+; S.EXECUTE ; 0        ; 1         ; 0       ; 0        ; 0       ; 0        ; 0       ; 0        ; 0       ; 1        ;
+; S.DANGER  ; 1        ; 0         ; 0       ; 0        ; 0       ; 0        ; 0       ; 0        ; 0       ; 1        ;
++-----------+----------+-----------+---------+----------+---------+----------+---------+----------+---------+----------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw16|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw15|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw14|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw13|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw12|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw11|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw10|b_state       ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw9|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw8|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw7|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw6|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw5|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw4|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw3|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw2|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw1|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAMIII|debounce_DE2_SW:deb|debouncer:sw0|b_state        ;
++------------------+------------------+------------+------------------+-------------+
+; Name             ; b_state.OFF_2_ON ; b_state.ON ; b_state.ON_2_OFF ; b_state.OFF ;
++------------------+------------------+------------+------------------+-------------+
+; b_state.OFF      ; 0                ; 0          ; 0                ; 0           ;
+; b_state.ON_2_OFF ; 0                ; 0          ; 1                ; 1           ;
+; b_state.ON       ; 0                ; 1          ; 0                ; 1           ;
+; b_state.OFF_2_ON ; 1                ; 0          ; 0                ; 1           ;
++------------------+------------------+------------+------------------+-------------+
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++----------------------------------------------+----------------------------------------+
+; Register name                                ; Reason for Removal                     ;
++----------------------------------------------+----------------------------------------+
+; S~4                                          ; Lost fanout                            ;
+; S~5                                          ; Lost fanout                            ;
+; S~6                                          ; Lost fanout                            ;
+; S~7                                          ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw16|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw16|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw15|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw15|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw14|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw14|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw13|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw13|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw12|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw12|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw11|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw11|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw10|b_state~6 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw10|b_state~7 ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw9|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw9|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw8|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw8|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw7|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw7|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw6|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw6|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw5|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw5|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw4|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw4|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw3|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw3|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw2|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw2|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw1|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw1|b_state~7  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw0|b_state~6  ; Lost fanout                            ;
+; debounce_DE2_SW:deb|debouncer:sw0|b_state~7  ; Lost fanout                            ;
+; S.DANGER                                     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 39       ;                                        ;
++----------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 532   ;
+; Number of registers using Synchronous Clear  ; 344   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 532   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 96    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |WRAPPER_EXAMIII ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; WAIT_A         ; 0000  ; Unsigned Binary                                        ;
+; GET_A          ; 0001  ; Unsigned Binary                                        ;
+; WAIT_B         ; 0010  ; Unsigned Binary                                        ;
+; GET_B          ; 0011  ; Unsigned Binary                                        ;
+; WAIT_C         ; 0100  ; Unsigned Binary                                        ;
+; GET_C          ; 0101  ; Unsigned Binary                                        ;
+; WAIT_D         ; 0110  ; Unsigned Binary                                        ;
+; GET_D          ; 0111  ; Unsigned Binary                                        ;
+; EXECUTE        ; 1000  ; Unsigned Binary                                        ;
+; DANGER         ; 1111  ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw0 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw1 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw2 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw3 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw4 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw5 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw6 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw7 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw8 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw9 ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                       ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                       ;
+; OFF            ; 10    ; Unsigned Binary                                       ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                       ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw10 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw11 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw12 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw13 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw14 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw15 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw16 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; ON             ; 00    ; Unsigned Binary                                        ;
+; ON_2_OFF       ; 01    ; Unsigned Binary                                        ;
+; OFF            ; 10    ; Unsigned Binary                                        ;
+; OFF_2_ON       ; 11    ; Unsigned Binary                                        ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 46                          ;
+; cycloneiii_ff         ; 532                         ;
+;     CLR               ; 92                          ;
+;     CLR SCLR          ; 344                         ;
+;     ENA CLR           ; 96                          ;
+; cycloneiii_lcell_comb ; 604                         ;
+;     arith             ; 353                         ;
+;         2 data inputs ; 323                         ;
+;         3 data inputs ; 30                          ;
+;     normal            ; 251                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 17                          ;
+;         2 data inputs ; 57                          ;
+;         3 data inputs ; 26                          ;
+;         4 data inputs ; 150                         ;
+;                       ;                             ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 2.53                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+    Info: Processing started: Fri Nov 14 11:03:06 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WRAPPER_EXAMIII -c WRAPPER_EXAMIII
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (12125): Using design file wrapper_examiii.v, which is not specified as a design file for the current project, but contains definitions for 4 design units and 4 entities in project
+    Info (12023): Found entity 1: WRAPPER_EXAMIII
+    Info (12023): Found entity 2: your_exam_module
+    Info (12023): Found entity 3: debounce_DE2_SW
+    Info (12023): Found entity 4: debouncer
+Info (12127): Elaborating entity "WRAPPER_EXAMIII" for the top level hierarchy
+Info (10264): Verilog HDL Case Statement information at wrapper_examiii.v(77): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at wrapper_examiii.v(151): all case item expressions in this case statement are onehot
+Warning (10034): Output port "LEDG[8..1]" at wrapper_examiii.v(16) has no driver
+Warning (10034): Output port "LEDR[17..16]" at wrapper_examiii.v(17) has no driver
+Info (12128): Elaborating entity "your_exam_module" for hierarchy "your_exam_module:instantiated"
+Info (12128): Elaborating entity "debounce_DE2_SW" for hierarchy "debounce_DE2_SW:deb"
+Info (12128): Elaborating entity "debouncer" for hierarchy "debounce_DE2_SW:deb|debouncer:sw0"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[1]" is stuck at GND
+    Warning (13410): Pin "LEDG[2]" is stuck at GND
+    Warning (13410): Pin "LEDG[3]" is stuck at GND
+    Warning (13410): Pin "LEDG[4]" is stuck at GND
+    Warning (13410): Pin "LEDG[5]" is stuck at GND
+    Warning (13410): Pin "LEDG[6]" is stuck at GND
+    Warning (13410): Pin "LEDG[7]" is stuck at GND
+    Warning (13410): Pin "LEDG[8]" is stuck at GND
+    Warning (13410): Pin "LEDR[16]" is stuck at GND
+    Warning (13410): Pin "LEDR[17]" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 38 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 713 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 667 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 556 megabytes
+    Info: Processing ended: Fri Nov 14 11:03:12 2014
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:02
+
+
