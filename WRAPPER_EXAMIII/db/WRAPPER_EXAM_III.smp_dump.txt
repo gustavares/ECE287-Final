@@ -1,0 +1,136 @@
+
+State Machine - |WRAPPER_EXAM_III|S
+Name S.DANGER S.GOT_D S.GOT_C S.GOT_B S.GOT_A S.EXECUTE S.GET_D S.WAIT_D S.GET_C S.WAIT_C S.GET_B S.WAIT_B S.GET_A S.WAIT_A 
+S.WAIT_A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+S.GET_A 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+S.WAIT_B 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+S.GET_B 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+S.WAIT_C 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+S.GET_C 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+S.WAIT_D 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+S.GET_D 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+S.EXECUTE 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+S.GOT_A 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+S.GOT_B 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+S.GOT_C 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+S.GOT_D 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+S.DANGER 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw16|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw15|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw14|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw13|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw12|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw11|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw6|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw5|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw4|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw3|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw2|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw1|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
+
+State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0|S
+Name S.OFF_2_ON S.ON S.ON_2_OFF S.OFF 
+S.OFF 0 0 0 0 
+S.ON_2_OFF 0 0 1 1 
+S.ON 0 1 0 1 
+S.OFF_2_ON 1 0 0 1 
