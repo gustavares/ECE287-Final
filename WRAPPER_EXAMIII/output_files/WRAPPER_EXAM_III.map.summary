@@ -1,17 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Dec 10 01:54:50 2015
+Analysis & Synthesis Status : Successful - Thu Dec 10 02:13:32 2015
 Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 Revision Name : WRAPPER_EXAM_III
 Top-level Entity Name : WRAPPER_EXAM_III
-Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 597
+Family : Cyclone IV E
+Total logic elements : 996
+    Total combinational functions : 935
+    Dedicated logic registers : 598
+Total registers : 598
 Total pins : 50
 Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 1
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 2
 Total PLLs : 0
-Total DLLs : 0
