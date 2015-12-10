@@ -252,7 +252,7 @@ reg pulseLoop2; // pulse to call the second loop
 reg [15:0]i;
 reg [15:0]a_104; // first loop condition
 
-loop2 instantiate_loop2(clk, rst, a, b, c, d, g, h, pulseLoop2);
+loop2 instantiate_loop2(clk, rst, a, b, c, d, g, h, pulseLoop2, done);
 
 reg[1:0]S;
 reg[1:0]NS;
@@ -284,10 +284,13 @@ begin
 				NS = LOOP1;
 		end
 		LOOP1:
+		begin
 			if(i < a_104)
 				NS = LOOP1;	
 			else
 				NS = DONE;
+		end
+		DONE: NS = DONE;
 end
 
 
