@@ -300,6 +300,7 @@ begin
 		done <= 1'b0;
 		i <= a;
 	   	a_104 <= a + 16'd104;
+	   	pulseLoop2 <= 1'b0;
 	end
 	else
 	begin
