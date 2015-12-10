@@ -1,6 +1,6 @@
 Analysis & Synthesis report for WRAPPER_EXAM_III
-Wed Dec 09 17:46:30 2015
-Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+Thu Dec 10 01:54:50 2015
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 
 
 ---------------------
@@ -13,56 +13,63 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |WRAPPER_EXAM_III|S
-  9. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw16|S
- 10. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw15|S
- 11. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw14|S
- 12. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw13|S
- 13. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw12|S
- 14. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw11|S
- 15. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10|S
- 16. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9|S
- 17. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8|S
- 18. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7|S
- 19. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw6|S
- 20. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw5|S
- 21. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw4|S
- 22. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw3|S
- 23. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw2|S
- 24. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw1|S
- 25. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0|S
- 26. Registers Removed During Synthesis
- 27. Removed Registers Triggering Further Register Optimizations
- 28. General Register Statistics
- 29. Parameter Settings for User Entity Instance: Top-level Entity: |WRAPPER_EXAM_III
- 30. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw0
- 31. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw1
- 32. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw2
- 33. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw3
- 34. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw4
- 35. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw5
- 36. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw6
- 37. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw7
- 38. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw8
- 39. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw9
- 40. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw10
- 41. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw11
- 42. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw12
- 43. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw13
- 44. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw14
- 45. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw15
- 46. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw16
- 47. Port Connectivity Checks: "debounce_DE2_SW:deb"
- 48. Post-Synthesis Netlist Statistics for Top Partition
- 49. Elapsed Time Per Partition
- 50. Analysis & Synthesis Messages
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |WRAPPER_EXAM_III|S
+ 10. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw16|S
+ 11. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw15|S
+ 12. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw14|S
+ 13. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw13|S
+ 14. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw12|S
+ 15. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw11|S
+ 16. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10|S
+ 17. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9|S
+ 18. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8|S
+ 19. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7|S
+ 20. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw6|S
+ 21. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw5|S
+ 22. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw4|S
+ 23. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw3|S
+ 24. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw2|S
+ 25. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw1|S
+ 26. State Machine - |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0|S
+ 27. State Machine - |WRAPPER_EXAM_III|your_exam_module:instantiated|S
+ 28. User-Specified and Inferred Latches
+ 29. Registers Removed During Synthesis
+ 30. Removed Registers Triggering Further Register Optimizations
+ 31. General Register Statistics
+ 32. Inverted Register Statistics
+ 33. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 34. Parameter Settings for User Entity Instance: Top-level Entity: |WRAPPER_EXAM_III
+ 35. Parameter Settings for User Entity Instance: your_exam_module:instantiated
+ 36. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw0
+ 37. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw1
+ 38. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw2
+ 39. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw3
+ 40. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw4
+ 41. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw5
+ 42. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw6
+ 43. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw7
+ 44. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw8
+ 45. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw9
+ 46. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw10
+ 47. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw11
+ 48. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw12
+ 49. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw13
+ 50. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw14
+ 51. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw15
+ 52. Parameter Settings for User Entity Instance: debounce_DE2_SW:deb|debouncer:sw16
+ 53. Port Connectivity Checks: "debounce_DE2_SW:deb"
+ 54. Post-Synthesis Netlist Statistics for Top Partition
+ 55. Elapsed Time Per Partition
+ 56. Analysis & Synthesis Messages
+ 57. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -79,189 +86,209 @@ agreement for further details.
 
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                    ;
-+------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 09 17:46:30 2015      ;
-; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
-; Revision Name                      ; WRAPPER_EXAM_III                           ;
-; Top-level Entity Name              ; WRAPPER_EXAM_III                           ;
-; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 686                                        ;
-;     Total combinational functions  ; 614                                        ;
-;     Dedicated logic registers      ; 538                                        ;
-; Total registers                    ; 538                                        ;
-; Total pins                         ; 50                                         ;
-; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
-; Embedded Multiplier 9-bit elements ; 0                                          ;
-; Total PLLs                         ; 0                                          ;
-+------------------------------------+--------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                                ;
++---------------------------------+-----------------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Thu Dec 10 01:54:50 2015                     ;
+; Quartus II 64-Bit Version       ; 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition ;
+; Revision Name                   ; WRAPPER_EXAM_III                                          ;
+; Top-level Entity Name           ; WRAPPER_EXAM_III                                          ;
+; Family                          ; Cyclone V                                                 ;
+; Logic utilization (in ALMs)     ; N/A                                                       ;
+; Total registers                 ; 597                                                       ;
+; Total pins                      ; 50                                                        ;
+; Total virtual pins              ; 0                                                         ;
+; Total block memory bits         ; 0                                                         ;
+; Total DSP Blocks                ; 1                                                         ;
+; Total HSSI RX PCSs              ; 0                                                         ;
+; Total HSSI PMA RX Deserializers ; 0                                                         ;
+; Total HSSI TX PCSs              ; 0                                                         ;
+; Total HSSI PMA TX Serializers   ; 0                                                         ;
+; Total PLLs                      ; 0                                                         ;
+; Total DLLs                      ; 0                                                         ;
++---------------------------------+-----------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; WRAPPER_EXAM_III   ; WRAPPER_EXAM_III   ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; WRAPPER_EXAM_III   ; WRAPPER_EXAM_III   ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 8      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ; < 0.1%      ;
+;     Processors 5-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                        ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+; WRAPPER_EXAM_III.v               ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Desktop/Digital Systems/FinalExam/WRAPPER_EXAMIII/WRAPPER_EXAM_III.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimate of Logic utilization (ALMs needed) ; 446          ;
+;                                             ;              ;
+; Combinational ALUT usage for logic          ; 829          ;
+;     -- 7 input functions                    ; 0            ;
+;     -- 6 input functions                    ; 54           ;
+;     -- 5 input functions                    ; 83           ;
+;     -- 4 input functions                    ; 96           ;
+;     -- <=3 input functions                  ; 596          ;
+;                                             ;              ;
+; Dedicated logic registers                   ; 597          ;
+;                                             ;              ;
+; I/O pins                                    ; 50           ;
+;                                             ;              ;
+; Total DSP Blocks                            ; 1            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[17]~input ;
+; Maximum fan-out                             ; 708          ;
+; Total fan-out                               ; 4807         ;
+; Average fan-out                             ; 3.15         ;
++---------------------------------------------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                               ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
-; WRAPPER_EXAM_III.v               ; yes             ; User Verilog HDL File  ; H:/TEACHING/ECE_287/FALL_2015/EXAMS/EXAM3_GENERATOR/DE2_115_QUARTUS_14/WRAPPER_EXAM_III/WRAPPER_EXAM_III.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                  ;
-+---------------------------------------------+----------------+
-; Resource                                    ; Usage          ;
-+---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 686            ;
-;                                             ;                ;
-; Total combinational functions               ; 614            ;
-; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 178            ;
-;     -- 3 input functions                    ; 60             ;
-;     -- <=2 input functions                  ; 376            ;
-;                                             ;                ;
-; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 280            ;
-;     -- arithmetic mode                      ; 334            ;
-;                                             ;                ;
-; Total registers                             ; 538            ;
-;     -- Dedicated logic registers            ; 538            ;
-;     -- I/O registers                        ; 0              ;
-;                                             ;                ;
-; I/O pins                                    ; 50             ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
-; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 538            ;
-; Total fan-out                               ; 3736           ;
-; Average fan-out                             ; 2.98           ;
-+---------------------------------------------+----------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                  ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
-; |WRAPPER_EXAM_III                  ; 614 (33)          ; 538 (105)    ; 0           ; 0            ; 0       ; 0         ; 50   ; 0            ; |WRAPPER_EXAM_III                                    ; work         ;
-;    |debounce_DE2_SW:deb|           ; 548 (0)           ; 400 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb                ; work         ;
-;       |debouncer:sw0|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0  ; work         ;
-;       |debouncer:sw10|             ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10 ; work         ;
-;       |debouncer:sw11|             ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw11 ; work         ;
-;       |debouncer:sw12|             ; 35 (35)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw12 ; work         ;
-;       |debouncer:sw13|             ; 35 (35)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw13 ; work         ;
-;       |debouncer:sw14|             ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw14 ; work         ;
-;       |debouncer:sw15|             ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw15 ; work         ;
-;       |debouncer:sw1|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw1  ; work         ;
-;       |debouncer:sw2|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw2  ; work         ;
-;       |debouncer:sw3|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw3  ; work         ;
-;       |debouncer:sw4|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw4  ; work         ;
-;       |debouncer:sw5|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw5  ; work         ;
-;       |debouncer:sw6|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw6  ; work         ;
-;       |debouncer:sw7|              ; 35 (35)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7  ; work         ;
-;       |debouncer:sw8|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8  ; work         ;
-;       |debouncer:sw9|              ; 35 (35)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9  ; work         ;
-;    |your_exam_module:instantiated| ; 33 (33)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated      ; work         ;
-+------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------+--------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------+--------------+
+; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Library Name ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------+--------------+
+; |WRAPPER_EXAM_III                  ; 829 (23)          ; 597 (88)     ; 0                 ; 1          ; 50   ; 0            ; |WRAPPER_EXAM_III                                    ; work         ;
+;    |debounce_DE2_SW:deb|           ; 480 (0)           ; 400 (0)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb                ; work         ;
+;       |debouncer:sw0|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0  ; work         ;
+;       |debouncer:sw10|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10 ; work         ;
+;       |debouncer:sw11|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw11 ; work         ;
+;       |debouncer:sw12|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw12 ; work         ;
+;       |debouncer:sw13|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw13 ; work         ;
+;       |debouncer:sw14|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw14 ; work         ;
+;       |debouncer:sw15|             ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw15 ; work         ;
+;       |debouncer:sw1|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw1  ; work         ;
+;       |debouncer:sw2|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw2  ; work         ;
+;       |debouncer:sw3|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw3  ; work         ;
+;       |debouncer:sw4|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw4  ; work         ;
+;       |debouncer:sw5|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw5  ; work         ;
+;       |debouncer:sw6|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw6  ; work         ;
+;       |debouncer:sw7|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7  ; work         ;
+;       |debouncer:sw8|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8  ; work         ;
+;       |debouncer:sw9|              ; 30 (30)           ; 25 (25)      ; 0                 ; 0          ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9  ; work         ;
+;    |your_exam_module:instantiated| ; 326 (326)         ; 109 (109)    ; 0                 ; 1          ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated      ; work         ;
++------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary  ;
++---------------------------------+-------------+
+; Statistic                       ; Number Used ;
++---------------------------------+-------------+
+; Independent 18x18               ; 1           ;
+; Total number of DSP blocks      ; 1           ;
+;                                 ;             ;
+; Fixed Point Unsigned Multiplier ; 1           ;
++---------------------------------+-------------+
 
 
 Encoding Type:  One-Hot
@@ -508,69 +535,156 @@ Encoding Type:  One-Hot
 +------------+------------+------+------------+-------------------------+
 
 
-+----------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                           ;
-+-----------------------------------------------------+----------------------------------------+
-; Register name                                       ; Reason for Removal                     ;
-+-----------------------------------------------------+----------------------------------------+
-; S~4                                                 ; Lost fanout                            ;
-; S~5                                                 ; Lost fanout                            ;
-; S~6                                                 ; Lost fanout                            ;
-; S~7                                                 ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw15|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw15|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw14|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw14|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw13|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw13|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw12|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw12|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw11|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw11|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw10|S~4              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw10|S~5              ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw9|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw9|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw8|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw8|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw7|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw7|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw6|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw6|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw5|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw5|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw4|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw4|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw3|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw3|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw2|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw2|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw1|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw1|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw0|S~4               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw0|S~5               ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|b_counter[0..19] ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S.OFF            ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S.ON_2_OFF       ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S.ON             ; Lost fanout                            ;
-; debounce_DE2_SW:deb|debouncer:sw16|S.OFF_2_ON       ; Lost fanout                            ;
-; S.DANGER                                            ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 63              ;                                        ;
-+-----------------------------------------------------+----------------------------------------+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------+
+; State Machine - |WRAPPER_EXAM_III|your_exam_module:instantiated|S                                       ;
++---------------+--------+----------+----------+-------+--------------+---------+---------+---------------+
+; Name          ; S.DONE ; S.POP_CA ; S.POP_GB ; S.EXP ; S.ODD_PARITY ; S.INC_J ; S.LOOP1 ; S.WAIT_INPUTS ;
++---------------+--------+----------+----------+-------+--------------+---------+---------+---------------+
+; S.WAIT_INPUTS ; 0      ; 0        ; 0        ; 0     ; 0            ; 0       ; 0       ; 0             ;
+; S.LOOP1       ; 0      ; 0        ; 0        ; 0     ; 0            ; 0       ; 1       ; 1             ;
+; S.INC_J       ; 0      ; 0        ; 0        ; 0     ; 0            ; 1       ; 0       ; 1             ;
+; S.ODD_PARITY  ; 0      ; 0        ; 0        ; 0     ; 1            ; 0       ; 0       ; 1             ;
+; S.EXP         ; 0      ; 0        ; 0        ; 1     ; 0            ; 0       ; 0       ; 1             ;
+; S.POP_GB      ; 0      ; 0        ; 1        ; 0     ; 0            ; 0       ; 0       ; 1             ;
+; S.POP_CA      ; 0      ; 1        ; 0        ; 0     ; 0            ; 0       ; 0       ; 1             ;
+; S.DONE        ; 1      ; 0        ; 0        ; 0     ; 0            ; 0       ; 0       ; 1             ;
++---------------+--------+----------+----------+-------+--------------+---------+---------+---------------+
 
 
-+--------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                  ;
-+----------------------------------------+--------------------+------------------------------------------------+
-; Register name                          ; Reason for Removal ; Registers Removed due to This Register         ;
-+----------------------------------------+--------------------+------------------------------------------------+
-; debounce_DE2_SW:deb|debouncer:sw16|S~4 ; Lost Fanouts       ; debounce_DE2_SW:deb|debouncer:sw16|S.OFF,      ;
-;                                        ;                    ; debounce_DE2_SW:deb|debouncer:sw16|S.ON_2_OFF, ;
-;                                        ;                    ; debounce_DE2_SW:deb|debouncer:sw16|S.ON,       ;
-;                                        ;                    ; debounce_DE2_SW:deb|debouncer:sw16|S.OFF_2_ON  ;
-+----------------------------------------+--------------------+------------------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; your_exam_module:instantiated|sumCA[0]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[2]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[4]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[6]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[8]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[10]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[12]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[14]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[1]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[3]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[5]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[7]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[9]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[11]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[13]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[15]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumCA[16]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[0]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[2]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[4]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[6]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[8]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[10]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[12]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[14]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[1]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[3]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[5]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[7]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[9]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[11]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[13]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[15]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|sumGB[16]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[15]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[14]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[13]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[12]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[11]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[10]             ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[9]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[8]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[7]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[6]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[5]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[4]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[3]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[2]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[1]              ; SW[17]              ; yes                    ;
+; your_exam_module:instantiated|a_104[0]              ; SW[17]              ; yes                    ;
+; Number of user-specified and inferred latches = 50  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++-----------------------------------------------------+---------------------------------------------+
+; Register name                                       ; Reason for Removal                          ;
++-----------------------------------------------------+---------------------------------------------+
+; your_exam_module:instantiated|h[5..15]              ; Stuck at GND due to stuck port data_in      ;
+; S~4                                                 ; Lost fanout                                 ;
+; S~5                                                 ; Lost fanout                                 ;
+; S~6                                                 ; Lost fanout                                 ;
+; S~7                                                 ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw15|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw15|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw14|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw14|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw13|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw13|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw12|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw12|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw11|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw11|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw10|S~4              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw10|S~5              ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw9|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw9|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw8|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw8|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw7|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw7|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw6|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw6|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw5|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw5|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw4|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw4|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw3|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw3|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw2|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw2|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw1|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw1|S~5               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw0|S~4               ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw0|S~5               ; Lost fanout                                 ;
+; your_exam_module:instantiated|S~11                  ; Lost fanout                                 ;
+; your_exam_module:instantiated|S~12                  ; Lost fanout                                 ;
+; your_exam_module:instantiated|S~13                  ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|b_counter[0..19] ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S.OFF            ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S.ON_2_OFF       ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S.ON             ; Lost fanout                                 ;
+; debounce_DE2_SW:deb|debouncer:sw16|S.OFF_2_ON       ; Lost fanout                                 ;
+; your_exam_module:instantiated|S.DONE                ; Merged with S.DANGER                        ;
+; S.DANGER                                            ; Stuck at GND due to stuck port data_in      ;
+; your_exam_module:instantiated|done                  ; Stuck at GND due to stuck port clock_enable ;
+; LEDG[0]~reg0                                        ; Stuck at GND due to stuck port data_in      ;
+; your_exam_module:instantiated|a_pos[5]              ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 81              ;                                             ;
++-----------------------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                           ;
++----------------------------------------+---------------------------+--------------------------------------------------+
+; Register name                          ; Reason for Removal        ; Registers Removed due to This Register           ;
++----------------------------------------+---------------------------+--------------------------------------------------+
+; debounce_DE2_SW:deb|debouncer:sw16|S~4 ; Lost Fanouts              ; debounce_DE2_SW:deb|debouncer:sw16|S.OFF,        ;
+;                                        ;                           ; debounce_DE2_SW:deb|debouncer:sw16|S.ON_2_OFF,   ;
+;                                        ;                           ; debounce_DE2_SW:deb|debouncer:sw16|S.ON,         ;
+;                                        ;                           ; debounce_DE2_SW:deb|debouncer:sw16|S.OFF_2_ON    ;
+; S.DANGER                               ; Stuck at GND              ; your_exam_module:instantiated|done, LEDG[0]~reg0 ;
+;                                        ; due to stuck port data_in ;                                                  ;
++----------------------------------------+---------------------------+--------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -578,14 +692,35 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 538   ;
-; Number of registers using Synchronous Clear  ; 320   ;
+; Total registers                              ; 597   ;
+; Number of registers using Synchronous Clear  ; 342   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 538   ;
+; Number of registers using Asynchronous Clear ; 596   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 103   ;
+; Number of registers using Clock Enable       ; 131   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; your_exam_module:instantiated|j[0]     ; 2       ;
+; your_exam_module:instantiated|j[1]     ; 1       ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 5:1                ; 11 bits   ; 33 LEs        ; 0 LEs                ; 33 LEs                 ; Yes        ; |WRAPPER_EXAM_III|your_exam_module:instantiated|g[5] ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |WRAPPER_EXAM_III|your_exam_module:instantiated|g[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------+
@@ -608,6 +743,23 @@ Encoding Type:  One-Hot
 ; GOT_D          ; 1100  ; Unsigned Binary                                         ;
 ; DANGER         ; 1111  ; Unsigned Binary                                         ;
 +----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: your_exam_module:instantiated ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; WAIT_INPUTS    ; 00    ; Unsigned Binary                                   ;
+; LOOP1          ; 01    ; Unsigned Binary                                   ;
+; INC_J          ; 010   ; Unsigned Binary                                   ;
+; ODD_PARITY     ; 011   ; Unsigned Binary                                   ;
+; EXP            ; 100   ; Unsigned Binary                                   ;
+; POP_GB         ; 101   ; Unsigned Binary                                   ;
+; POP_CA         ; 110   ; Unsigned Binary                                   ;
+; DONE           ; 111   ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -846,23 +998,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
+; arriav_ff             ; 597                         ;
+;     CLR               ; 134                         ;
+;     CLR SCLR          ; 331                         ;
+;     ENA CLR           ; 120                         ;
+;     ENA CLR SCLR      ; 11                          ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 830                         ;
+;     arith             ; 396                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 359                         ;
+;         2 data inputs ; 35                          ;
+;     normal            ; 434                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 80                          ;
+;         3 data inputs ; 118                         ;
+;         4 data inputs ; 96                          ;
+;         5 data inputs ; 83                          ;
+;         6 data inputs ; 54                          ;
+; arriav_mac            ; 1                           ;
 ; boundary_port         ; 50                          ;
-; cycloneiii_ff         ; 538                         ;
-;     CLR               ; 115                         ;
-;     CLR SCLR          ; 320                         ;
-;     ENA CLR           ; 103                         ;
-; cycloneiii_lcell_comb ; 614                         ;
-;     arith             ; 334                         ;
-;         2 data inputs ; 304                         ;
-;         3 data inputs ; 30                          ;
-;     normal            ; 280                         ;
-;         1 data inputs ; 16                          ;
-;         2 data inputs ; 56                          ;
-;         3 data inputs ; 30                          ;
-;         4 data inputs ; 178                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 2.79                        ;
+; Average LUT depth     ; 2.53                        ;
 +-----------------------+-----------------------------+
 
 
@@ -871,7 +1030,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -880,37 +1039,164 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
-    Info: Processing started: Wed Dec 09 17:46:23 2015
+    Info: Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
+    Info: Processing started: Thu Dec 10 01:54:34 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WRAPPER_EXAM_III -c WRAPPER_EXAM_III
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 4 design units, including 4 entities, in source file wrapper_exam_iii.v
     Info (12023): Found entity 1: WRAPPER_EXAM_III
     Info (12023): Found entity 2: your_exam_module
     Info (12023): Found entity 3: debounce_DE2_SW
     Info (12023): Found entity 4: debouncer
 Info (12127): Elaborating entity "WRAPPER_EXAM_III" for the top level hierarchy
-Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(93): all case item expressions in this case statement are onehot
-Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(175): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(94): all case item expressions in this case statement are onehot
+Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(176): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "your_exam_module" for hierarchy "your_exam_module:instantiated"
+Warning (10036): Verilog HDL or VHDL warning at WRAPPER_EXAM_III.v(264): object "exDone" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(395): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(400): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(408): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(409): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(432): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(433): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(443): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(444): truncated value with size 32 to match size of target (5)
+Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(392): all case item expressions in this case statement are onehot
+Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(357): inferring latch(es) for variable "a_104", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(357): inferring latch(es) for variable "exCounter", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(357): inferring latch(es) for variable "sumGB", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(357): inferring latch(es) for variable "sumCA", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "sumCA[0]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[1]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[2]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[3]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[4]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[5]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[6]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[7]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[8]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[9]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[10]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[11]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[12]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[13]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[14]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[15]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumCA[16]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[0]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[1]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[2]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[3]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[4]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[5]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[6]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[7]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[8]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[9]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[10]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[11]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[12]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[13]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[14]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[15]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "sumGB[16]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[0]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[1]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[2]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[3]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[4]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[5]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[6]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[7]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[8]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[9]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[10]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[11]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[12]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[13]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[14]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "exCounter[15]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[0]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[1]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[2]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[3]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[4]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[5]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[6]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[7]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[8]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[9]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[10]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[11]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[12]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[13]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[14]" at WRAPPER_EXAM_III.v(357)
+Info (10041): Inferred latch for "a_104[15]" at WRAPPER_EXAM_III.v(357)
 Info (12128): Elaborating entity "debounce_DE2_SW" for hierarchy "debounce_DE2_SW:deb"
 Info (12128): Elaborating entity "debouncer" for hierarchy "debounce_DE2_SW:deb|debouncer:sw0"
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "your_exam_module:instantiated|ex[0]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[0]~_emulated" and latch "your_exam_module:instantiated|ex[0]~1"
+    Warning (13310): Register "your_exam_module:instantiated|ex[1]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[1]~_emulated" and latch "your_exam_module:instantiated|ex[1]~5"
+    Warning (13310): Register "your_exam_module:instantiated|ex[2]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[2]~_emulated" and latch "your_exam_module:instantiated|ex[2]~9"
+    Warning (13310): Register "your_exam_module:instantiated|ex[3]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[3]~_emulated" and latch "your_exam_module:instantiated|ex[3]~13"
+    Warning (13310): Register "your_exam_module:instantiated|ex[4]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[4]~_emulated" and latch "your_exam_module:instantiated|ex[4]~17"
+    Warning (13310): Register "your_exam_module:instantiated|ex[5]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[5]~_emulated" and latch "your_exam_module:instantiated|ex[5]~21"
+    Warning (13310): Register "your_exam_module:instantiated|ex[6]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[6]~_emulated" and latch "your_exam_module:instantiated|ex[6]~25"
+    Warning (13310): Register "your_exam_module:instantiated|ex[7]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[7]~_emulated" and latch "your_exam_module:instantiated|ex[7]~29"
+    Warning (13310): Register "your_exam_module:instantiated|ex[8]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[8]~_emulated" and latch "your_exam_module:instantiated|ex[8]~33"
+    Warning (13310): Register "your_exam_module:instantiated|ex[9]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[9]~_emulated" and latch "your_exam_module:instantiated|ex[9]~37"
+    Warning (13310): Register "your_exam_module:instantiated|ex[10]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[10]~_emulated" and latch "your_exam_module:instantiated|ex[10]~41"
+    Warning (13310): Register "your_exam_module:instantiated|ex[11]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[11]~_emulated" and latch "your_exam_module:instantiated|ex[11]~45"
+    Warning (13310): Register "your_exam_module:instantiated|ex[12]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[12]~_emulated" and latch "your_exam_module:instantiated|ex[12]~49"
+    Warning (13310): Register "your_exam_module:instantiated|ex[13]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[13]~_emulated" and latch "your_exam_module:instantiated|ex[13]~53"
+    Warning (13310): Register "your_exam_module:instantiated|ex[14]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[14]~_emulated" and latch "your_exam_module:instantiated|ex[14]~57"
+    Warning (13310): Register "your_exam_module:instantiated|ex[15]" is converted into an equivalent circuit using register "your_exam_module:instantiated|ex[15]~_emulated" and latch "your_exam_module:instantiated|ex[15]~61"
+    Warning (13310): Register "your_exam_module:instantiated|i[15]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[15]~_emulated" and latch "your_exam_module:instantiated|i[15]~1"
+    Warning (13310): Register "your_exam_module:instantiated|i[14]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[14]~_emulated" and latch "your_exam_module:instantiated|i[14]~5"
+    Warning (13310): Register "your_exam_module:instantiated|i[13]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[13]~_emulated" and latch "your_exam_module:instantiated|i[13]~9"
+    Warning (13310): Register "your_exam_module:instantiated|i[12]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[12]~_emulated" and latch "your_exam_module:instantiated|i[12]~13"
+    Warning (13310): Register "your_exam_module:instantiated|i[11]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[11]~_emulated" and latch "your_exam_module:instantiated|i[11]~17"
+    Warning (13310): Register "your_exam_module:instantiated|i[10]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[10]~_emulated" and latch "your_exam_module:instantiated|i[10]~21"
+    Warning (13310): Register "your_exam_module:instantiated|i[9]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[9]~_emulated" and latch "your_exam_module:instantiated|i[9]~25"
+    Warning (13310): Register "your_exam_module:instantiated|i[8]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[8]~_emulated" and latch "your_exam_module:instantiated|i[8]~29"
+    Warning (13310): Register "your_exam_module:instantiated|i[7]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[7]~_emulated" and latch "your_exam_module:instantiated|i[7]~33"
+    Warning (13310): Register "your_exam_module:instantiated|i[6]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[6]~_emulated" and latch "your_exam_module:instantiated|i[6]~37"
+    Warning (13310): Register "your_exam_module:instantiated|i[5]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[5]~_emulated" and latch "your_exam_module:instantiated|i[5]~41"
+    Warning (13310): Register "your_exam_module:instantiated|i[4]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[4]~_emulated" and latch "your_exam_module:instantiated|i[4]~45"
+    Warning (13310): Register "your_exam_module:instantiated|i[3]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[3]~_emulated" and latch "your_exam_module:instantiated|i[3]~49"
+    Warning (13310): Register "your_exam_module:instantiated|i[2]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[2]~_emulated" and latch "your_exam_module:instantiated|i[2]~53"
+    Warning (13310): Register "your_exam_module:instantiated|i[1]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[1]~_emulated" and latch "your_exam_module:instantiated|i[1]~57"
+    Warning (13310): Register "your_exam_module:instantiated|i[0]" is converted into an equivalent circuit using register "your_exam_module:instantiated|i[0]~_emulated" and latch "your_exam_module:instantiated|i[0]~61"
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "your_exam_module:instantiated|i[2]~53" merged with LATCH primitive "your_exam_module:instantiated|a_104[2]"
+    Info (13026): Duplicate LATCH primitive "your_exam_module:instantiated|i[1]~57" merged with LATCH primitive "your_exam_module:instantiated|a_104[1]"
+    Info (13026): Duplicate LATCH primitive "your_exam_module:instantiated|i[0]~61" merged with LATCH primitive "your_exam_module:instantiated|a_104[0]"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDG[0]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 62 registers lost all their fanouts during netlist optimizations.
+Info (17049): 65 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Gustavo/Desktop/Digital Systems/FinalExam/WRAPPER_EXAMIII/output_files/WRAPPER_EXAM_III.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "SW[16]"
-Info (21057): Implemented 736 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 963 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 686 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 555 megabytes
-    Info: Processing ended: Wed Dec 09 17:46:31 2015
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:03
+    Info (21061): Implemented 912 logic cells
+    Info (21062): Implemented 1 DSP elements
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 52 warnings
+    Info: Peak virtual memory: 778 megabytes
+    Info: Processing ended: Thu Dec 10 01:54:50 2015
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:26
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Gustavo/Desktop/Digital Systems/FinalExam/WRAPPER_EXAMIII/output_files/WRAPPER_EXAM_III.map.smsg.
 
 
