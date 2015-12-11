@@ -365,7 +365,7 @@ begin
 		h <= 16'd0;
 		done <= 1'b0;
 		
-		i <= a;
+	   i <= a;
 	   j <= 16'd3;
 
 	   a_104 <= a + 16'd104;
@@ -393,12 +393,12 @@ begin
 			case(S)
 				INC_I:
 				begin
-					i <= i + 1;
+					i <= i + 16'd1;
 					pulseIncJ <= 1'b1;
 				end
 				INC_J:
 				begin
-					j <= j + 1;
+					j <= j + 16'd1;
 					pulseOdd <= 1'b1;
 					pulseIncJ <= 1'b0;
 				end
@@ -407,7 +407,7 @@ begin
 					if(a_pos < 5'd16)
 					begin
 						if(a[a_pos] == 1'b1)
-							onesCount <= onesCount + 1;
+							onesCount <= onesCount + 16'd1;
 						a_pos <= a_pos + 1;
 					end
 					else
@@ -434,7 +434,7 @@ begin
 				begin
 					if(exCounter < b)
 					begin
-						exCounter <= exCounter + 1;
+						exCounter <= exCounter + 16'd1;
 						ex <= ex * c;
 					end
 					else
@@ -447,9 +447,9 @@ begin
 					begin
 						if(sumGB[sumGB_pos] == 1'b1)
 						begin
-							popGB_counter <= popGB_counter + 1;
+							popGB_counter <= popGB_counter + 5'd1;
 						end
-						sumGB_pos <= sumGB_pos + 1;
+						sumGB_pos <= sumGB_pos + 5'd1;
 					end
 					else
 						g <= popGB_counter;
@@ -461,9 +461,9 @@ begin
 					begin
 						if(sumCA[sumCA_pos] == 1'b1)
 						begin
-							popCA_counter <= popCA_counter + 1;
+							popCA_counter <= popCA_counter + 5'd1;
 						end
-						sumCA_pos <= sumCA_pos + 1;
+						sumCA_pos <= sumCA_pos + 5'd1;
 					end
 					else
 					begin
