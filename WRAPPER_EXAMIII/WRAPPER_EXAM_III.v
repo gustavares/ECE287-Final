@@ -272,19 +272,19 @@ reg [16:0]sumCA;
 reg [4:0]sumCA_pos;
 reg [4:0]popCA_counter;
 
-reg[2:0]S;
-reg[2:0]NS;
+reg[3:0]S;
+reg[3:0]NS;
 
 // STATES
-parameter WAIT_INPUTS = 2'd0,
-   		  INC_I = 2'd1,
-   		  INC_J = 3'd2,
-   		  ODD_PARITY = 3'd3,
-   		  EXP = 3'd4,
-   		  POP_GB = 3'd5,
-   		  POP_CA = 3'd6,
-   		  DONE = 3'd7
-   		  SET_VALUES = 3'd8;
+parameter WAIT_INPUTS = 4'd0,
+   		  INC_I = 4'd1,
+   		  INC_J = 4'd2,
+   		  ODD_PARITY = 4'd3,
+   		  EXP = 4'd4,
+   		  POP_GB = 4'd5,
+   		  POP_CA = 4'd6,
+   		  DONE = 4'd7
+   		  SET_VALUES = 4'd8;
 
 always @(posedge clk or negedge rst)
 begin
