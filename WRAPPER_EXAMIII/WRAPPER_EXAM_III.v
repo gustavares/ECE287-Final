@@ -74,10 +74,11 @@ begin
 end
 		
 /* 
-	STATE MACHINE grabs each bit of your inputs in order a, b, c, d and then sets the start to 1 and your system should run.  To enter a number, first assign the 16 bit number
-	on SW[15:0] and then flip SW[16] high to enter the value.  Then press KEY[0] enter the next number.  Continue this process four times.  KEY[1]
-	selects between the 2 outputs.
-	Note reset has to be high during all of this.  
+	STATE MACHINE grabs each bit of your inputs in order a, b, c, d and then sets the start to 1 and your system should run.  
+	- To enter a number, first assign the 16 bit number on SW[15:0] and then flip SW[16] high to enter the value. 
+	  Then press KEY[0] enter the next number. Continue this process four times. 
+	- KEY[1] selects between the 2 outputs.
+	- Note reset has to be high during all of this.  
 	
 	DISPLAYED:
 		LEDR[15:0] displays either g or h

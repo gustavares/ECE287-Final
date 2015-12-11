@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
 
--- DATE "12/10/2015 02:14:16"
+-- DATE "12/10/2015 02:23:04"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -37,8 +37,8 @@ USE IEEE.STD_LOGIC_1164.ALL;
 ENTITY 	WRAPPER_EXAM_III IS
     PORT (
 	CLOCK_50 : IN std_logic;
-	LEDG : OUT std_logic_vector(8 DOWNTO 0);
-	LEDR : OUT std_logic_vector(17 DOWNTO 0);
+	LEDG : BUFFER std_logic_vector(8 DOWNTO 0);
+	LEDR : BUFFER std_logic_vector(17 DOWNTO 0);
 	SW : IN std_logic_vector(17 DOWNTO 0);
 	KEY : IN std_logic_vector(3 DOWNTO 0)
 	);
