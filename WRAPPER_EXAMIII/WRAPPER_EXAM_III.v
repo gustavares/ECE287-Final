@@ -283,7 +283,8 @@ parameter WAIT_INPUTS = 2'd0,
    		  EXP = 3'd4,
    		  POP_GB = 3'd5,
    		  POP_CA = 3'd6,
-   		  DONE = 3'd7;
+   		  DONE = 3'd7
+   		  SET_VALUES = 3'd8;
 
 always @(posedge clk or negedge rst)
 begin
