@@ -276,7 +276,7 @@ reg[2:0]NS;
 
 // STATES
 parameter WAIT_INPUTS = 2'd0,
-   		  LOOP1 = 2'd1,
+   		  INC_I = 2'd1,
    		  INC_J = 3'd2,
    		  ODD_PARITY = 3'd3,
    		  EXP = 3'd4,
@@ -300,26 +300,28 @@ begin
 	case(S)
 		WAIT_INPUTS:
 		begin
-			if(start == 1'b0)
+			if(start == 1'b1)
+				NS = INC_I;
+			else
 				NS = WAIT_INPUTS;
-			else
-				NS = LOOP1;
 		end
-		LOOP1:
+		INC_I:
 		begin
-			if(i < a_104 && pulseIncJ == 1'b0)
-				NS = LOOP1;	
+			if(pulseIncJ == 1'b1)
+				NS = INC_J;	
+			else if(i < a_104)
+				NS = INC_I;
 			else
-				NS = INC_J;
+				NS = DONE;
 		end
 		INC_J:
 		begin
-			if(j < 7'd104 && pulseOdd == 1'b0)
-				NS = INC_J;
-			else if(pulseOdd == 1'b1)
+			if(pulseOdd == 1'b1)
 				NS = ODD_PARITY;
+			else if(j < 7'd104)
+				NS = INC_J;
 			else
-				NS = LOOP1;
+				NS = INC_I;
 		end
 		ODD_PARITY:
 		begin
@@ -363,11 +365,11 @@ begin
 		done <= 1'b0;
 		
 		i <= a;
-	   	j <= 16'd3;
+	   j <= 16'd3;
 
-	   	a_104 <= a + 16'd104;
+	   a_104 <= a + 16'd104;
 
-	   	pulseIncJ <= 1'b0;
+	   pulseIncJ <= 1'b0;
 		pulseOdd <= 1'b0;
 
 		onesCount <= 5'd0;
@@ -377,11 +379,9 @@ begin
 		exCounter <= 16'd0;
 		exDone <= 1'b0;
 		
-		sumGB <= g + b;
 		sumGB_pos <= 5'd0;
 		popGB_counter <= 5'd0;
 		
-		sumCA <= c + a;
 		sumCA_pos <= 5'd0;
 		popCA_counter <= 5'd0;
 	end
@@ -390,7 +390,7 @@ begin
 		if (start == 1'b1)
 		begin
 			case(S)
-				LOOP1:
+				INC_I:
 				begin
 					i <= i + 1;
 					pulseIncJ <= 1'b1;
@@ -399,6 +399,7 @@ begin
 				begin
 					j <= j + 1;
 					pulseOdd <= 1'b1;
+					pulseIncJ <= 1'b0;
 				end
 				ODD_PARITY: // is_odd_parity(a)
 				begin
@@ -410,7 +411,15 @@ begin
 					end
 					else
 					begin
-						if((onesCount == 2) || (onesCount == 4) || (onesCount == 6) || (onesCount == 8) || (onesCount == 10) || (onesCount == 12) || (onesCount == 14) || (onesCount == 16))
+						if((onesCount == 2) || 
+							(onesCount == 4) || 
+							(onesCount == 6) || 
+							(onesCount == 8) || 
+							(onesCount == 10)|| 
+							(onesCount == 12)|| 
+							(onesCount == 14)|| 
+							(onesCount == 16))
+							
 							is_odd_parity <= 1'b0;
 						else
 							is_odd_parity <= 1'b1;
@@ -426,6 +435,7 @@ begin
 				end
 				POP_GB: // g = pop_count(g+b)
 				begin
+					sumGB <= g + b;
 					if(sumGB_pos < 5'd17)
 					begin
 						if(sumGB[sumGB_pos] == 1'b1)
@@ -437,6 +447,7 @@ begin
 				end
 				POP_CA: // h = pop_count(c+a)
 				begin
+				sumCA <= c + a;
 					if(sumCA_pos < 5'd17)
 					begin
 						if(sumCA[sumCA_pos] == 1'b1)
