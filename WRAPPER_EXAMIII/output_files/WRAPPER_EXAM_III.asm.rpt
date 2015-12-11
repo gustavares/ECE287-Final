@@ -1,9 +1,13 @@
 Assembler report for WRAPPER_EXAM_III
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Dec 10 02:22:54 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 =======
 Thu Dec 10 22:18:24 2015
+=======
+Thu Dec 10 23:14:54 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
 
@@ -44,10 +48,14 @@ agreement for further details.
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
 <<<<<<< HEAD
+<<<<<<< HEAD
 ; Assembler Status      ; Successful - Thu Dec 10 02:22:54 2015 ;
 =======
 ; Assembler Status      ; Successful - Thu Dec 10 22:18:24 2015 ;
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
+=======
+; Assembler Status      ; Successful - Thu Dec 10 23:14:54 2015 ;
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 ; Revision Name         ; WRAPPER_EXAM_III                      ;
 ; Top-level Entity Name ; WRAPPER_EXAM_III                      ;
 ; Family                ; Cyclone IV E                          ;
@@ -77,8 +85,8 @@ agreement for further details.
 ; Option         ; Setting                                                                 ;
 +----------------+-------------------------------------------------------------------------+
 ; Device         ; EP4CE115F29C7                                                           ;
-; JTAG usercode  ; 0x005E7680                                                              ;
-; Checksum       ; 0x005E7680                                                              ;
+; JTAG usercode  ; 0x005EA64D                                                              ;
+; Checksum       ; 0x005EA64D                                                              ;
 +----------------+-------------------------------------------------------------------------+
 
 
@@ -92,8 +100,12 @@ Info: Running Quartus II 64-Bit Assembler
     Info: Processing started: Thu Dec 10 02:22:48 2015
 =======
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Dec 10 22:18:18 2015
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
+=======
+    Info: Processing started: Thu Dec 10 23:14:48 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off WRAPPER_EXAM_III -c WRAPPER_EXAM_III
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
@@ -105,8 +117,8 @@ Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
     Info: Total CPU time (on all processors): 00:00:06
 =======
     Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Thu Dec 10 22:18:25 2015
-    Info: Elapsed time: 00:00:07
+    Info: Processing ended: Thu Dec 10 23:14:54 2015
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:04
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
 

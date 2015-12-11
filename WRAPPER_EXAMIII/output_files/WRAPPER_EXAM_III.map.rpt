@@ -1,9 +1,13 @@
 Analysis & Synthesis report for WRAPPER_EXAM_III
 <<<<<<< HEAD
+<<<<<<< HEAD
 Thu Dec 10 02:22:19 2015
 Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 =======
 Thu Dec 10 22:17:38 2015
+=======
+Thu Dec 10 23:14:08 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
 
@@ -116,15 +120,15 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 10 22:17:38 2015      ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 10 23:14:08 2015      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; WRAPPER_EXAM_III                           ;
 ; Top-level Entity Name              ; WRAPPER_EXAM_III                           ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 966                                        ;
-;     Total combinational functions  ; 905                                        ;
-;     Dedicated logic registers      ; 635                                        ;
-; Total registers                    ; 635                                        ;
+; Total logic elements               ; 993                                        ;
+;     Total combinational functions  ; 932                                        ;
+;     Dedicated logic registers      ; 651                                        ;
+; Total registers                    ; 651                                        ;
 ; Total pins                         ; 50                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -253,27 +257,27 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 966          ;
+; Estimated Total logic elements              ; 993          ;
 ;                                             ;              ;
-; Total combinational functions               ; 905          ;
+; Total combinational functions               ; 932          ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 241          ;
-;     -- 3 input functions                    ; 165          ;
-;     -- <=2 input functions                  ; 499          ;
+;     -- 4 input functions                    ; 236          ;
+;     -- 3 input functions                    ; 181          ;
+;     -- <=2 input functions                  ; 515          ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 496          ;
-;     -- arithmetic mode                      ; 409          ;
+;     -- normal mode                          ; 494          ;
+;     -- arithmetic mode                      ; 438          ;
 ;                                             ;              ;
-; Total registers                             ; 635          ;
-;     -- Dedicated logic registers            ; 635          ;
+; Total registers                             ; 651          ;
+;     -- Dedicated logic registers            ; 651          ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
 ; I/O pins                                    ; 50           ;
 ; Embedded Multiplier 9-bit elements          ; 2            ;
 ; Maximum fan-out node                        ; SW[17]~input ;
-; Maximum fan-out                             ; 680          ;
-; Total fan-out                               ; 4912         ;
+; Maximum fan-out                             ; 696          ;
+; Total fan-out                               ; 5034         ;
 ; Average fan-out                             ; 2.99         ;
 +---------------------------------------------+--------------+
 
@@ -283,7 +287,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node         ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                    ; Library Name ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+--------------+
-; |WRAPPER_EXAM_III                  ; 905 (34)          ; 635 (89)     ; 0           ; 2            ; 0       ; 1         ; 50   ; 0            ; |WRAPPER_EXAM_III                                                                      ; work         ;
+; |WRAPPER_EXAM_III                  ; 932 (34)          ; 651 (89)     ; 0           ; 2            ; 0       ; 1         ; 50   ; 0            ; |WRAPPER_EXAM_III                                                                      ; work         ;
 ;    |debounce_DE2_SW:deb|           ; 544 (0)           ; 400 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb                                                  ; work         ;
 ;       |debouncer:sw0|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw0                                    ; work         ;
 ;       |debouncer:sw10|             ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw10                                   ; work         ;
@@ -301,7 +305,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |debouncer:sw7|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw7                                    ; work         ;
 ;       |debouncer:sw8|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw8                                    ; work         ;
 ;       |debouncer:sw9|              ; 34 (34)           ; 25 (25)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |WRAPPER_EXAM_III|debounce_DE2_SW:deb|debouncer:sw9                                    ; work         ;
-;    |your_exam_module:instantiated| ; 327 (327)         ; 146 (146)    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated                                        ; work         ;
+;    |your_exam_module:instantiated| ; 354 (354)         ; 162 (162)    ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated                                        ; work         ;
 ;       |lpm_mult:Mult0|             ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated|lpm_mult:Mult0                         ; work         ;
 ;          |mult_7dt:auto_generated| ; 0 (0)             ; 0 (0)        ; 0           ; 2            ; 0       ; 1         ; 0    ; 0            ; |WRAPPER_EXAM_III|your_exam_module:instantiated|lpm_mult:Mult0|mult_7dt:auto_generated ; work         ;
 +------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------+--------------+
@@ -687,12 +691,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 635   ;
+; Total registers                              ; 651   ;
 ; Number of registers using Synchronous Clear  ; 320   ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 600   ;
+; Number of registers using Asynchronous Clear ; 616   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 190   ;
+; Number of registers using Clock Enable       ; 206   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -1049,27 +1053,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 50                          ;
-; cycloneiii_ff         ; 635                         ;
+; cycloneiii_ff         ; 651                         ;
 ;     CLR               ; 124                         ;
 ;     CLR SCLR          ; 320                         ;
 ;     ENA               ; 34                          ;
-;     ENA CLR           ; 156                         ;
+;     ENA CLR           ; 172                         ;
 ;     plain             ; 1                           ;
-; cycloneiii_lcell_comb ; 905                         ;
-;     arith             ; 409                         ;
-;         2 data inputs ; 353                         ;
-;         3 data inputs ; 56                          ;
-;     normal            ; 496                         ;
+; cycloneiii_lcell_comb ; 932                         ;
+;     arith             ; 438                         ;
+;         2 data inputs ; 366                         ;
+;         3 data inputs ; 72                          ;
+;     normal            ; 494                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 25                          ;
-;         2 data inputs ; 119                         ;
+;         1 data inputs ; 27                          ;
+;         2 data inputs ; 120                         ;
 ;         3 data inputs ; 109                         ;
-;         4 data inputs ; 241                         ;
+;         4 data inputs ; 236                         ;
 ; cycloneiii_mac_mult   ; 1                           ;
 ; cycloneiii_mac_out    ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.83                        ;
+; Average LUT depth     ; 2.82                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1096,8 +1100,12 @@ Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Processing started: Thu Dec 10 02:22:05 2015
 =======
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+<<<<<<< HEAD
     Info: Processing started: Thu Dec 10 22:17:31 2015
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
+=======
+    Info: Processing started: Thu Dec 10 23:14:02 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WRAPPER_EXAM_III -c WRAPPER_EXAM_III
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 4 design units, including 4 entities, in source file wrapper_exam_iii.v
@@ -1114,29 +1122,13 @@ Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(395): trun
 Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(400): truncated value with size 32 to match size of target (16)
 Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(409): truncated value with size 32 to match size of target (5)
 Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(410): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(442): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(443): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(454): truncated value with size 32 to match size of target (5)
-Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(455): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(433): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(446): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(448): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(460): truncated value with size 32 to match size of target (5)
+Warning (10230): Verilog HDL assignment warning at WRAPPER_EXAM_III.v(462): truncated value with size 32 to match size of target (5)
 Info (10264): Verilog HDL Case Statement information at WRAPPER_EXAM_III.v(392): all case item expressions in this case statement are onehot
 Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(359): inferring latch(es) for variable "a_104", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at WRAPPER_EXAM_III.v(359): inferring latch(es) for variable "exCounter", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "exCounter[0]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[1]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[2]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[3]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[4]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[5]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[6]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[7]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[8]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[9]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[10]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[11]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[12]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[13]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[14]" at WRAPPER_EXAM_III.v(359)
-Info (10041): Inferred latch for "exCounter[15]" at WRAPPER_EXAM_III.v(359)
 Info (10041): Inferred latch for "a_104[0]" at WRAPPER_EXAM_III.v(359)
 Info (10041): Inferred latch for "a_104[1]" at WRAPPER_EXAM_III.v(359)
 Info (10041): Inferred latch for "a_104[2]" at WRAPPER_EXAM_III.v(359)
@@ -1218,10 +1210,10 @@ Warning (21074): Design contains 3 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]"
     Warning (15610): No output dependent on input pin "KEY[3]"
     Warning (15610): No output dependent on input pin "SW[16]"
-Info (21057): Implemented 1018 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1045 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 23 input pins
     Info (21059): Implemented 27 output pins
-    Info (21061): Implemented 966 logic cells
+    Info (21061): Implemented 993 logic cells
     Info (21062): Implemented 2 DSP elements
 <<<<<<< HEAD
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 52 warnings
@@ -1232,8 +1224,8 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 52 warnin
 =======
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 49 warnings
     Info: Peak virtual memory: 562 megabytes
-    Info: Processing ended: Thu Dec 10 22:17:39 2015
-    Info: Elapsed time: 00:00:08
+    Info: Processing ended: Thu Dec 10 23:14:09 2015
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:03
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
 

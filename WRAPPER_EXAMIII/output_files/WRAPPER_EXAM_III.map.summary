@@ -1,17 +1,21 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Thu Dec 10 02:22:19 2015
 Quartus II 64-Bit Version : 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition
 =======
 Analysis & Synthesis Status : Successful - Thu Dec 10 22:17:38 2015
+=======
+Analysis & Synthesis Status : Successful - Thu Dec 10 23:14:08 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c
 Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Web Edition
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
 Revision Name : WRAPPER_EXAM_III
 Top-level Entity Name : WRAPPER_EXAM_III
 Family : Cyclone IV E
-Total logic elements : 966
-    Total combinational functions : 905
-    Dedicated logic registers : 635
-Total registers : 635
+Total logic elements : 993
+    Total combinational functions : 932
+    Dedicated logic registers : 651
+Total registers : 651
 Total pins : 50
 Total virtual pins : 0
 Total memory bits : 0

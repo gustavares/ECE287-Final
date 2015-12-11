@@ -5,5 +5,9 @@ Creation_Time = Thu Dec 10 02:20:52 2015
 =======
 Quartus_Version = Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 Version_Index = 335595520
+<<<<<<< HEAD
 Creation_Time = Thu Dec 10 20:06:34 2015
 >>>>>>> 22c46d8a670c5d59990c23304dc5cd2fdeb6aab5
+=======
+Creation_Time = Thu Dec 10 22:29:05 2015
+>>>>>>> 4541a7b23dd56b4592811071e8b0b27633470c5c

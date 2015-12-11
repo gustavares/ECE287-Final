@@ -430,7 +430,10 @@ begin
 				EXP: // g = exp(c, b)
 				begin
 					if(exCounter < b)
+					begin
+						exCounter <= exCounter + 1;
 						ex <= ex * c;
+					end
 					else
 						g <= ex;
 				end
@@ -440,7 +443,9 @@ begin
 					if(sumGB_pos < 5'd17)
 					begin
 						if(sumGB[sumGB_pos] == 1'b1)
+						begin
 							popGB_counter <= popGB_counter + 1;
+						end
 						sumGB_pos <= sumGB_pos + 1;
 					end
 					else
@@ -452,14 +457,20 @@ begin
 					if(sumCA_pos < 5'd17)
 					begin
 						if(sumCA[sumCA_pos] == 1'b1)
+						begin
 							popCA_counter <= popCA_counter + 1;
+						end
 						sumCA_pos <= sumCA_pos + 1;
 					end
 					else
+					begin
 						h <= popCA_counter;
+					end
 				end
 				DONE:
+				begin
 					done <= 1'b1;
+				end
 			endcase
 		end
 	end
