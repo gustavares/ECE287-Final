@@ -412,7 +412,7 @@ begin
 					end
 					else
 					begin
-						if((onesCount == 2) || 
+						if( (onesCount == 2) || 
 							(onesCount == 4) || 
 							(onesCount == 6) || 
 							(onesCount == 8) || 
@@ -420,11 +420,14 @@ begin
 							(onesCount == 12)|| 
 							(onesCount == 14)|| 
 							(onesCount == 16))
-							
-							is_odd_parity <= 1'b0;
+							begin
+								is_odd_parity <= 1'b0;
+							end
 						else
+						begin
 							is_odd_parity <= 1'b1;
-						pulseOdd <= 1'b0;
+						end
+						pulseOdd <= 1'b0; // should I take this off?
 					end
 				end
 				EXP: // g = exp(c, b)
