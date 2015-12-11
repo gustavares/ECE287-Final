@@ -1,5 +1,6 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="WRAPPER_EXAM_III">
+		<CBX_INST_ENTRY INSTANCE_NAME="|WRAPPER_EXAM_III|your_exam_module:instantiated|lpm_mult:Mult0" CBX_FILE_NAME="mult_7dt.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
