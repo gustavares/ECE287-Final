@@ -302,10 +302,11 @@ begin
 		WAIT_INPUTS:
 		begin
 			if(start == 1'b1)
-				NS = INC_I;
+				NS = SET_VALUES;
 			else
 				NS = WAIT_INPUTS;
 		end
+		SET_VALUES: NS = INC_I;
 		INC_I:
 		begin
 			if(pulseIncJ == 1'b1)
@@ -364,11 +365,6 @@ begin
 		g <= 16'd0;
 		h <= 16'd0;
 		done <= 1'b0;
-		
-	   i <= a;
-	   j <= 16'd3;
-
-	   a_104 <= a + 16'd104;
 
 	   pulseIncJ <= 1'b0;
 		pulseOdd <= 1'b0;
@@ -376,7 +372,7 @@ begin
 		onesCount <= 5'd0;
 		a_pos <= 5'd0;
 		
-		ex <= c;
+		
 		exCounter <= 16'd0;
 		exDone <= 1'b0;
 		
@@ -391,6 +387,13 @@ begin
 		if (start == 1'b1)
 		begin
 			case(S)
+				SET_VALUES:
+				begin
+					ex <= c;
+					a_104 <= a + 16'd104;
+					i <= a;
+					j <= 16'd3;
+				end
 				INC_I:
 				begin
 					i <= i + 16'd1;
